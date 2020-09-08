@@ -1,0 +1,14 @@
+<view class="translate">
+	<view class="top">
+		<picker bindchange="bindPickerChange" value="{{lanIndex}}" range="{{lanlist}}" range-key="name">
+			<view class="icon">
+				<view class="cn">中</view>
+				<view class="eg">{{lanlist[lanIndex]['text']}}</view>
+				<view class="line"></view>
+			</view>
+		</picker>
+
+		<view class="input" bindtap="inputText">请输入内容</view>
+	</view>
+	<History historyList="{{transHistory}}" bind:delEvent="onDelEvent"></History>
+</view>

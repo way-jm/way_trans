@@ -1,0 +1,10 @@
+<view class="history">
+	<scroll-view scroll-y="true" style="height: 100%;" class="container">
+	   <view class="item {{item.sourceLan&&item.sourceLan==='cn'?'right':''}}" wx:for="{{historyList}}" wx:key="index">
+        <view class="content" bindlongpress="bindlongpress" data-id="{{index}}"> 
+           <view class="source">{{item.source}}</view>
+           <view class="target">{{item.target}}</view>
+        </view>
+     </view>
+	</scroll-view>
+</view>

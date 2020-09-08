@@ -1,0 +1,10 @@
+<view class="input">
+  <view class="inputTop">
+    <input
+    auto-focus
+    placeholder="请输入内容"
+    placeholder-style="color:#909399"
+    bindconfirm="inputconfirm"
+    ></input>
+  </view>
+</view>

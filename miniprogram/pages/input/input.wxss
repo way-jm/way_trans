@@ -1,0 +1,9 @@
+.input .inputTop {
+  padding:10px;
+}
+.input .inputTop input{
+  background: #E4E7ED;
+  height: 35px;
+  border-radius: 3px;
+  padding:0 8px;
+}
