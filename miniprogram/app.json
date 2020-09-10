@@ -3,7 +3,9 @@
     "pages/translate/translate",
     "pages/chart/chart",
     "pages/about/about",
-    "pages/input/input"
+    "pages/input/input",
+    "pages/kuchi/kuchi",
+    "pages/cc/cc"
   ],
   "window": {
     "backgroundColor": "#ffffff",
@@ -28,8 +30,8 @@
       "selectedIconPath": "images/chart.png"
     },
     {
-      "pagePath": "pages/about/about",
-      "text": "关于",
+      "pagePath": "pages/kuchi/kuchi",
+      "text": "试唇色",
       "iconPath": "images/about_n.png",
       "selectedIconPath": "images/about.png"
     }]

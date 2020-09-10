@@ -63,7 +63,9 @@ Page({
     }
    
     if(!text) return;
-   
+    wx.showLoading({
+      title: '正在翻译',
+    })
     wx.cloud.callFunction({
       // 云函数名称
       name: 'translate',
@@ -73,6 +75,7 @@ Page({
       }
     })
     .then(res => {
+      wx.hideLoading()
       const {result} = res;
       const {TargetText,Target,origin} = JSON.parse(result);
       // 最多存储20条

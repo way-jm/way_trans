@@ -1,0 +1,52 @@
+<view>
+	<view class="uploadCotainer">
+		<view class="upload" bindtap="upload">
+			<image src="{{originSrc}}" mode="aspectFill"></image>
+			<view>点击上传美照</view>
+		</view>
+		<view class="selectOption">
+			<view class="selectAlp">
+				<text class="title">选择浓淡程度</text>
+				<view class="body-view">
+					<slider bindchange="sliderchange" selected-color="#eb2f96" block-size="20" show-value min="50" />
+				</view>
+			</view>
+			<view class="selectColor">
+				<text class="title">选择口红色号</text>
+				<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+					<view class="picker">
+						圣罗兰-纯口红 <text>切换</text>
+					</view>
+				</picker>
+        <view class="active">
+          <view class="colorBoard" style="background:{{active}}"></view>
+          <view class="colorTitle">当前选择:撩骚</view>
+        </view>
+        <view class="board">
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+          <view style="background:{{active}}" class="item"></view>
+
+        </view>
+			</view>
+		</view>
+
+	</view>
+	<!-- <button bindtap="upload">上传</button> -->
+
+</view>

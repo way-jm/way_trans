@@ -48,7 +48,11 @@ Component({
             }
           } catch (e) {
           }
-          
+        } else if(tapIndex ===0){
+          const {target} = _this.properties.historyList[id];
+          wx.setClipboardData({
+            data: target
+          })
         }
       },
       fail (res) {

@@ -1,0 +1,112 @@
+.cc{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  bottom: 0;
+}
+.chartroom{
+  position: fixed;
+  top:0px;
+  bottom: 50px;
+  padding: 10px 8px;
+  box-sizing: border-box;
+}
+.chartroom .item{
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+}
+.chartroom .right{
+  text-align: right;
+}
+.chartroom .right .content{
+  padding-right: 65px;
+}
+.chartroom .content{
+  display: inline-block;
+  max-width: 75%;
+  position: relative;
+}
+.chartroom .left .content{
+ padding-left: 65px;
+}
+.san{
+  position: absolute;
+  
+  width: 0;
+  height: 0;
+  border:solid 5px;
+}
+.right .san{
+  right:-10px;
+  background: #E4E7ED;
+  border-color:white white white #E4E7ED;
+}
+.left .san{
+  position: absolute;
+  background: #07c160;
+  left:-10px;
+  border-color:white #07c160 white white;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right:10px;
+  top:0
+}
+.right .icon{
+  right:5px;
+  top:0
+}
+.left .icon{
+  left:5px;
+  top:0
+}
+.icon image{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.text {
+  background: #07c160;
+  padding: 15px 10px;
+  color:white;
+  font-size: 16px;
+  text-align: left;
+  line-height: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+.chartroom .right .content .text{
+  background: #E4E7ED;
+  color:#303133
+}
+.bottom{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #e9e9e9;
+  padding: 10px;
+  display: flex;
+  box-sizing: border-box;
+}
+.input{
+  flex:1;
+  
+}
+.input input{
+  background: white;
+  height: 32px;
+  border-radius: 3px;
+  padding:0 8px;
+}
+.send{
+  width: 60px;
+  margin-left: 15px;
+}
+.send button{
+  vertical-align: middle;
+}

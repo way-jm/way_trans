@@ -1,0 +1,56 @@
+<view class="cc">
+  <scroll-view
+	class="chartroom"
+	style="bottom:{{bottom+50}}px"
+	scroll-y="true"
+	scroll-into-view="{{toast}}"
+	>
+	  <view
+		class="item {{item.origin==='way'?'left':'right'}}"
+		wx:for="{{chartHistory}}"
+		wx:key="index"
+		id="item{{index}}"
+		>
+        <view class="content" wx-if="{{item.origin==='way'}}"> 
+           <view class="text">
+					 <view class="san"></view>
+					 {{item.content}}</view>
+					 <view class="icon">
+					   <image src="/images/robot.png"></image>
+					 </view>
+        </view>
+				<view class="content" wx-if="{{item.origin!=='way'}}"> 
+				   <view class="icon">
+					   <image src="/images/my.png"></image>
+					 </view>
+           <view class="text">
+					 <view class="san"></view>
+					 {{item.content}}
+					 </view>
+        </view>
+     </view>
+	</scroll-view> 
+	<view class="bottom" style="bottom:{{bottom}}px">
+		<view class="input">
+			<input
+			placeholder="请输入内容"
+			placeholder-style="color:#909399"
+			bindblur="inputBlur"
+			adjust-position="{{false}}"
+			bindfocus="inputfocus"
+			bindinput="inputIn"
+			bindconfirm="sendMsg"
+			value="{{value}}"
+			></input>
+		</view>
+		<view class="send">
+			<button
+			class="mini-btn"
+			type="primary"
+			size="mini"
+			disabled="{{!value}}"
+			bindtap="sendMsg"
+			>发送</button>
+		</view>
+	</view>
+</view>

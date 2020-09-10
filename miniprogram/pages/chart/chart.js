@@ -5,8 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    complete:false,
+    finish:false
   },
+  goToChart(){
+    wx.navigateTo({url:'/pages/cc/cc'})
+  },
+
 
   /**
    * 生命周期函数--监听页面加载
@@ -19,7 +24,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    this.setData({
+      complete:true
+    })
   },
 
   /**
