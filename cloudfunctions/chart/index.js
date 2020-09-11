@@ -9,6 +9,7 @@ const Credential = tencentcloud.common.Credential;
 const ClientProfile = tencentcloud.common.ClientProfile;
 const HttpProfile = tencentcloud.common.HttpProfile;
 
+let cred = new Credential("", "");
 
 let httpProfile = new HttpProfile();
 httpProfile.endpoint = "nlp.tencentcloudapi.com";
