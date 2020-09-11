@@ -4,6 +4,10 @@
 			<image src="{{originSrc}}" mode="aspectFill"></image>
 			<view>点击上传美照</view>
 		</view>
+		<view class="upload after" wx-if="{{afterPic}}">
+			<image src="{{afterPic}}" mode="aspectFill" bindtap="preview"></image>
+			<view class="download" bindtap="downLoad">保存到相册</view>
+		</view>
 		<view class="selectOption">
 			<view class="selectAlp">
 				<text class="title">选择浓淡程度</text>
@@ -12,38 +16,32 @@
 				</view>
 			</view>
 			<view class="selectColor">
-				<text class="title">选择口红色号</text>
+				<text class="title">选择口红色系列&色号</text>
 				<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
 					<view class="picker">
-						圣罗兰-纯口红 <text>切换</text>
+						{{currentSeries}} <text>切换</text>
 					</view>
 				</picker>
         <view class="active">
-          <view class="colorBoard" style="background:{{active}}"></view>
-          <view class="colorTitle">当前选择:撩骚</view>
+          <view class="colorBoard" style="background:{{active.color}}"></view>
+          <view class="colorTitle">当前选择:{{active.name}}</view>
         </view>
         <view class="board">
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-          <view style="background:{{active}}" class="item"></view>
-
+          <view
+					wx:for="{{lipsticks}}"
+					wx:key="id"
+					style="background:{{item.color}}"
+					class="item"
+					data-id="{{index}}"
+					bindtap="boardTap"
+					></view>
         </view>
 			</view>
+			<button
+			type="primary"
+			bindtap="start"
+			disabled="{{originSrc==='/images/up.png'}}"
+			>开始试色</button>
 		</view>
 
 	</view>

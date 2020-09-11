@@ -1,9 +1,10 @@
 // 云函数入口文件
 const cloud = require('wx-server-sdk')
+
 const tencentcloud = require("tencentcloud-sdk-nodejs");
 
-const NlpClient = tencentcloud.nlp.v20190408.Client;
-const models = tencentcloud.nlp.v20190408.Models;
+const FmuClient = tencentcloud.fmu.v20191213.Client;
+const models = tencentcloud.fmu.v20191213.Models;
 
 const Credential = tencentcloud.common.Credential;
 const ClientProfile = tencentcloud.common.ClientProfile;
@@ -11,28 +12,28 @@ const HttpProfile = tencentcloud.common.HttpProfile;
 
 
 let httpProfile = new HttpProfile();
-httpProfile.endpoint = "nlp.tencentcloudapi.com";
+httpProfile.endpoint = "fmu.tencentcloudapi.com";
 let clientProfile = new ClientProfile();
 clientProfile.httpProfile = httpProfile;
-let client = new NlpClient(cred, "ap-guangzhou", clientProfile);
+let client = new FmuClient(cred, "ap-shanghai", clientProfile);
 
-let req = new models.ChatBotRequest()
+let req = new models.TryLipstickPicRequest();
 
 cloud.init()
 
 // 云函数入口函数
 exports.main = async (event) => {
-  const {text}= event;
-
+  const {Url,LipColorInfo}= event;
   const json_params = {
-    Flag:0,
-    Query:text
+    RspImgType:'url',
+    Url,
+    LipColorInfos:[LipColorInfo]
   }
   const params = JSON.stringify(json_params);
   req.from_json_string(params);
 
   return new Promise((resolve,reject)=>{
-    client.ChatBot(req, function(errMsg, response) {
+    client.TryLipstickPic(req, function(errMsg, response) {
       if (errMsg) {
         reject(errMsg)
       }

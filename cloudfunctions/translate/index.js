@@ -9,7 +9,6 @@ const Credential = tencentcloud.common.Credential;
 const ClientProfile = tencentcloud.common.ClientProfile;
 const HttpProfile = tencentcloud.common.HttpProfile;
 
-let cred = new Credential("AKIDvhOpzyenpcDzMVOz81g3sSyDG6hlD7GA", "mJzQaVAICWbS3OSGMBn9HH1UhfS4Om6A");
 let httpProfile = new HttpProfile();
 httpProfile.endpoint = "tmt.tencentcloudapi.com";
 let clientProfile = new ClientProfile();
