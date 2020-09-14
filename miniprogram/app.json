@@ -11,7 +11,7 @@
     "backgroundColor": "#ffffff",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTitleText": "有为翻译",
+    "navigationBarTitleText": "小M-AI",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -25,13 +25,13 @@
     },
     {
       "pagePath": "pages/chart/chart",
-      "text": "闲聊",
+      "text": "小M",
       "iconPath": "images/chart_n.png",
       "selectedIconPath": "images/chart.png"
     },
     {
-      "pagePath": "pages/kuchi/kuchi",
-      "text": "试唇色",
+      "pagePath": "pages/about/about",
+      "text": "关于",
       "iconPath": "images/about_n.png",
       "selectedIconPath": "images/about.png"
     }]

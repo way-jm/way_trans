@@ -8,9 +8,11 @@ Page({
     complete:false,
     finish:false
   },
-  goToChart(){
-    wx.navigateTo({url:'/pages/cc/cc'})
+  goToChart(e){
+    const { currentTarget: { dataset: { url}}} = e
+    wx.navigateTo({url})
   },
+  
 
 
   /**

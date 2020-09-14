@@ -12,7 +12,7 @@
 			<view class="selectAlp">
 				<text class="title">选择浓淡程度</text>
 				<view class="body-view">
-					<slider bindchange="sliderchange" selected-color="#eb2f96" block-size="20" show-value min="50" />
+					<slider bindchange="sliderchange" selected-color="#eb2f96" block-size="20" show-value min="20" max="80" value="{{alpha}}"/>
 				</view>
 			</view>
 			<view class="selectColor">
@@ -43,8 +43,5 @@
 			disabled="{{originSrc==='/images/up.png'}}"
 			>开始试色</button>
 		</view>
-
 	</view>
-	<!-- <button bindtap="upload">上传</button> -->
-
 </view>

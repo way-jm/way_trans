@@ -94,6 +94,12 @@ Page({
       this.setData({
         afterPic:ResultUrl
       })
+    }).catch(e=>{
+      wx.hideLoading()
+      wx.showToast({
+        title: '未识别到人脸或系统错误',
+        icon:'none'
+      })
     })
   },
   bindMultiPickerChange: function (e) {
