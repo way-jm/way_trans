@@ -1,6 +1,7 @@
 // 云函数入口文件
 const cloud = require('wx-server-sdk')
 const tencentcloud = require("tencentcloud-sdk-nodejs");
+const config = require('./config.json')
 
 const TmtClient = tencentcloud.tmt.v20180321.Client;
 const models = tencentcloud.tmt.v20180321.Models;

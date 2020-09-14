@@ -1,6 +1,7 @@
 // 云函数入口文件
 const cloud = require('wx-server-sdk')
 const tencentcloud = require("tencentcloud-sdk-nodejs");
+const config = require('./config.json')
 
 const NlpClient = tencentcloud.nlp.v20190408.Client;
 const models = tencentcloud.nlp.v20190408.Models;
