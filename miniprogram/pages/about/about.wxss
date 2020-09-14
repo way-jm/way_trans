@@ -1,1 +1,10 @@
-/* pages/about/about.wxss */
+page {
+  background-color: rgb(244, 244, 245);
+}
+ .top{
+  width: 100%;
+  height: 250px;
+}
+ .top image{
+  width: 100%;
+}

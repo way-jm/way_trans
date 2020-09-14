@@ -1,2 +1,7 @@
-<!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<view>
+	<view class="top">
+		<image src="https://7761-way-trans-pf1xk-1303012330.tcb.qcloud.la/ai.png" mode="widthFix"></image>
+	</view>
+  <view class="list">
+  </view>
+</view>
