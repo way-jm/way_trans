@@ -11,4 +11,12 @@
 		<view class="input" bindtap="inputText">请输入内容</view>
 	</view>
 	<History historyList="{{transHistory}}" bind:delEvent="onDelEvent"></History>
+	<!-- <view class="record">
+	   <view class="oriLan" bindtap="startRecord">
+		    按住说中文
+		 </view>
+		 <view class="target">
+		    English
+		 </view>
+	</view> -->
 </view>

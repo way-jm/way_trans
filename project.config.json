@@ -25,7 +25,7 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": true,
+		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"appid": "wxa391e630f6efaf51",
@@ -102,6 +102,27 @@
 					"id": -1,
 					"name": "pages/about/about",
 					"pathName": "pages/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/story/story",
+					"pathName": "pages/story/story",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/chart/chart",
+					"pathName": "pages/chart/chart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/turn/turn",
+					"pathName": "pages/turn/turn",
 					"scene": null
 				}
 			]

@@ -2,6 +2,24 @@
 	<view class="top">
 		<image src="https://7761-way-trans-pf1xk-1303012330.tcb.qcloud.la/ai.png" mode="widthFix"></image>
 	</view>
-  <view class="list">
-  </view>
+	<view class="list">
+		<view class="list-item">
+			<button class="btn" bindtap="goToStory">
+				<image src="/images/story.png" class="left"></image>开发故事
+					<image src="/images/right.png" class="right"></image>
+			</button>
+		</view>
+		<view class="list-item">
+			<button class="btn" bindtap="support">
+			<image src="/images/zan.png" class="left"></image>赞赏支持
+			<image src="/images/right.png" class="right"></image>
+			</button>
+		</view>
+		<view class="list-item">
+			<button class="btn" open-type="feedback">
+			<image src="/images/feedback.png" class="left"></image>意见反馈
+				<image src="/images/right.png" class="right"></image>
+			</button>
+		</view>
+	</view>
 </view>

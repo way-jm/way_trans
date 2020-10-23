@@ -1,6 +1,6 @@
 <view class="chart">
 	<view class="chartList">
-	
+
 		<view class="item" bindtap="goToChart" data-url='/pages/cc/cc'>
 			<view class="core" style="left:{{complete?'0':'-100%'}}">
 				<view class="left">
@@ -15,7 +15,7 @@
 				</view>
 			</view>
 		</view>
-			<view class="item" bindtap="goToChart" data-url='/pages/kuchi/kuchi'>
+		<view class="item" bindtap="goToChart" data-url='/pages/kuchi/kuchi'>
 			<view class="core" style="left:{{complete?'0':'100%'}}">
 				<view class="left">
 					<image src='/images/ant.png' mode="scaleToFill"></image>
@@ -26,6 +26,20 @@
 						<view class="time">今天</view>
 					</view>
 					<view class="news">完美复现真实试色场景</view>
+				</view>
+			</view>
+		</view>
+			<view class="item" bindtap="goToChart" data-url='/pages/turn/turn'>
+			<view class="core" style="left:{{complete?'0':'100%'}}">
+				<view class="left">
+					<image src='/images/turn.png' mode="scaleToFill"></image>
+				</view>
+				<view class="right">
+					<view class="user">
+						幸运大轮盘
+						<view class="time">今天</view>
+					</view>
+					<view class="news">给小圆一次暴富的机会。。。</view>
 				</view>
 			</view>
 		</view>

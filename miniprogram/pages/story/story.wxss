@@ -1,0 +1,30 @@
+page {
+  background-color: rgb(244, 244, 245);
+}
+.section{
+  background: white;
+  color:#606266;
+  margin-bottom:15px;
+}
+
+.section .title{
+  line-height: 45px;
+  border-bottom: 1px solid #F2F6FC;
+  text-indent: 20px;
+  color:#303133
+}
+.section .title .span{
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+.section .title .text{
+  display: inline-block;
+  text-indent: 0;
+}
+.content{
+  padding:15px 12px;
+  text-indent: 12px;
+}

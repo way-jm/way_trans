@@ -37,6 +37,14 @@ Page({
     })
   },
 
+  startRecord(){
+    wx.startRecord({
+      success (res) {
+        const tempFilePath = res.tempFilePath
+      }
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -63,6 +71,7 @@ Page({
     }
    
     if(!text) return;
+    const aa = decodeURI(text)
     wx.showLoading({
       title: '正在翻译',
     })
@@ -70,7 +79,7 @@ Page({
       // 云函数名称
       name: 'translate',
       data:{
-        text,
+        text:aa,
         lan
       }
     })

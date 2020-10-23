@@ -1,0 +1,44 @@
+<view>
+	<view class="section">
+		<view class="title">
+			<view class="span" style="background:#409EFF"></view>
+			<view class="text">简介</view>
+		</view>
+		<view class="content">
+			<text space="ensp">小M-AI是一款基于腾讯开放的人工智能API开发的AI工具小程序。
+主要功能包括：
+  汉语与英日俄法韩的文字翻译;
+  中外语音和图片翻译(即将支持)
+  在线试唇色;
+  人工智能闲聊;
+  人脸性别转换(即将支持);
+  人脸动漫化（即将支持）;</text>
+		</view>
+	</view>
+
+  	<view class="section">
+		<view class="title">
+			<view class="span" style="background:#F56C6C"></view>
+			<view class="text">开发故事</view>
+		</view>
+		<view class="content">
+			<text space="ensp">笔者曾经基于TensorFlow训练过人脸识别的模型，但是在服务高可用方面达不到可以生产的要求。
+偶然的情况下，发现了腾讯云基于NLP训练的翻译模型的准确率很高。逐渐萌生了做一款机器翻译小程序的念头(笔者专业是外语)。
+  在做的过程中，又陆续发现了其他有趣的API，比如在线试唇色。笔者不惜形象，用自己的脸做了测试，发现仿真度和还原度很高(虽然我觉得趣味性是第一位的)。</text>
+		</view>
+	</view>
+  <view class="section">
+		<view class="title">
+			<view class="span" style="background:#67C23A"></view>
+			<view class="text">后续开发</view>
+		</view>
+		<view class="content">
+			<text space="ensp">如开篇所说，后面在两个方面完善项目：
+   实用功能：增加中外互译，图片翻译，语音翻译
+   趣味功能：人脸风格转换，人像动漫化
+   以及一些积极的尝试，比如自动批改数学作业...
+   最后，如果觉得有意思，赞赏小程序，让我们做的更好。ღ( ´･ᴗ･` )比心
+</text>
+		</view>
+	</view>
+</view>

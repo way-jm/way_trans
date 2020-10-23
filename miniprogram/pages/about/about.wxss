@@ -3,8 +3,48 @@ page {
 }
  .top{
   width: 100%;
-  height: 250px;
+  height: 240px;
 }
  .top image{
   width: 100%;
+}
+.list{
+  background: white;
+  margin-top:10px;
+}
+
+.list-item{
+  width: 100%;
+}
+.list-item:not(:first-child){
+  border-top: 1px solid #F2F6FC;
+}
+.list-item button.btn{
+  border-radius: 0;
+  margin-left:0;
+  margin-right:0;
+  width: 750rpx !important;
+  line-height: 60px;
+  text-align: left;
+  background: white !important;
+  font-size: 15px;
+  font-weight: normal;
+  color:#606266;
+  padding: 0 25px;
+  position: relative;
+}
+.list-item button image.left{
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+  margin-right:10px
+}
+.list-item button image.right{
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  position: absolute;
+  right: 25px;
+  top:50%;
+  transform: translateY(-50%);
 }

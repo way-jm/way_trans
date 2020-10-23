@@ -1,0 +1,6 @@
+{
+  "backgroundColor":"red",
+  "usingComponents": {
+    "zhuanpan": "/components/turn/turn"
+  }
+}

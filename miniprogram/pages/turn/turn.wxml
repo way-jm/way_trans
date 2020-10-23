@@ -1,0 +1,18 @@
+<view>
+  <zhuanpan id='zhuanpan' 
+    bind:myData='getData' 
+    bind:myAwards="getAwards" 
+    bind:startZhuan="startZhuan" 
+    size='{{size}}' 
+    musicflg='{{musicflg}}' 
+    fastJuedin='{{fastJuedin}}' 
+    repeat='{{repeat}}' 
+    getAwards='{{getAwards}}'
+    wx:if="{{s_awards==='???'}}"
+    zhuanpanArr='{{zhuanpanArr}}'>
+    </zhuanpan>
+    <view class="desc" wx:if="{{s_awards!=='???'}}" animation="{{animationData}}">
+      <image src="../../images/container.png" mode="heightFix"></image>
+      <view class="word">{{s_awards}}</view>
+    </view>
+</view>

@@ -1,4 +1,4 @@
-// pages/about/about.js
+// miniprogram/pages/story/story.js
 Page({
 
   /**
@@ -6,19 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  support(){
-    const url ='https://7761-way-trans-pf1xk-1303012330.tcb.qcloud.la/support.jpg?sign=6d799ea17b952c22da3515c562778c88&t=1600138521'
-    wx.previewImage({
-      urls: [url] // 需要预览的图片http链接列表
-    })
-  },
-
-  goToStory(){
-    wx.navigateTo({
-      url: '/pages/story/story',
-    })
   },
 
   /**

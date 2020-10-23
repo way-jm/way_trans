@@ -16,6 +16,7 @@
   font-size: 14px;
   color:#909399;
   padding-top: 4px;
+  box-sizing: border-box;
 }
 .top .icon .line{
   width: 25px;
@@ -52,4 +53,8 @@
   border-radius: 3px;
   text-indent: 5px;
   color:#909399;
+}
+.record{
+  position: absolute;
+  bottom:10px
 }
